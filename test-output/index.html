@@ -24,6 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
+<<<<<<< HEAD
       <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
@@ -144,6 +145,118 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Showing-class-failed -->
+=======
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Showing">
+              <span class="suite-name border-passed">Showing</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Showing">
+                    <span>[unset file name]</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Showing">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Showing">
+                    <span>3 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Showing">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Showing">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Showing">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Showing">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">1 method,   1 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Showing" class="hide-methods passed suite-Showing"> (hide)</a> <!-- hide-methods passed suite-Showing -->
+                      <a href="#" panel-name="suite-Showing" class="show-methods passed suite-Showing"> (show)</a> <!-- show-methods passed suite-Showing -->
+                    </span>
+                    <div class="method-list-content passed suite-Showing">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Showing" title="TestingXperts.smartshow.tests.TC_SS001" hash-for-method="TC_SS001_Test">TC_SS001_Test</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Showing -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Showing" class="panel Showing">
+          <div class="suite-Showing-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">TestingXperts.smartshow.tests.TC_SS001</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_SS001_Test">
+                  </a> <!-- TC_SS001_Test -->
+                  <span class="method-name">TC_SS001_Test</span>
+                  <em>
+(Verify display text and ui controls and Logo with Appropirate heading)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Showing-class-passed -->
+>>>>>>> refs/heads/master
         </div> <!-- panel Showing -->
         <div panel-name="test-xml-Showing" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -224,11 +337,16 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'TC_SS001_Test')
 data.setCell(0, 2, 'TestingXperts.smartshow.tests.TC_SS001')
+<<<<<<< HEAD
 data.setCell(0, 3, 2316);
+=======
+data.setCell(0, 3, 13721);
+>>>>>>> refs/heads/master
 window.suiteTableData['Showing']= { tableData: data, tableDiv: 'times-div-Showing'}
 return data;
 }
               </script>
+<<<<<<< HEAD
               <span class="suite-total-time">Total running time: 2 seconds</span>
               <div id="times-div-Showing">
               </div> <!-- times-div-Showing -->
@@ -259,6 +377,36 @@ return data;
               <div class="test-method">
                 <img src="failed.png">
                 </img>
+=======
+              <span class="suite-total-time">Total running time: 13 seconds</span>
+              <div id="times-div-Showing">
+              </div> <!-- times-div-Showing -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Showing" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Showing</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Showing" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Showing" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestingXperts.smartshow.tests.TC_SS001</div> <!-- chronological-class-name -->
+              <div class="test-method">
+>>>>>>> refs/heads/master
                 <span class="method-name">TC_SS001_Test</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
