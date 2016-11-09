@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Regression]">
+  <parameter name="Browser" value="Firefox"/>
+  <test name="Regression-Tests(failed)">
+    <classes>
+      <class name="TestingXperts.smartshow.tests.TC_SS002">
+        <methods>
+          <include name="TC_SS002_Test"/>
+        </methods>
+      </class> <!-- TestingXperts.smartshow.tests.TC_SS002 -->
+    </classes>
+  </test> <!-- Regression-Tests(failed) -->
+</suite> <!-- Failed suite [Regression] -->
