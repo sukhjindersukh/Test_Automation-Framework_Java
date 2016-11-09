@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Showing]">
+  <parameter name="Browser" value="Chrome"/>
+  <test name="Showing-Tests(failed)">
+    <classes>
+      <class name="TestingXperts.smartshow.tests.TC_SS001">
+        <methods>
+          <include name="TC_SS001_Test"/>
+        </methods>
+      </class> <!-- TestingXperts.smartshow.tests.TC_SS001 -->
+    </classes>
+  </test> <!-- Showing-Tests(failed) -->
+</suite> <!-- Failed suite [Showing] -->
