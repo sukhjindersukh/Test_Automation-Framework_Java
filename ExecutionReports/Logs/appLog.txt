@@ -10962,3 +10962,48 @@
 2016-11-08 17:51:53 INFO  - Check Delete this showing UI control - Pass 
 2016-11-08 17:51:53 INFO  - Total Time taken in(seconds):11
 2016-11-08 17:51:54 INFO  - Showing suite finished at Tue Nov 08 17:51:54 IST 2016
+2016-11-09 16:21:50 INFO  - Showing suite started at Wed Nov 09 16:21:50 IST 2016
+2016-11-09 16:22:13 INFO  - Test Started: TC_SS001
+2016-11-09 16:22:13 INFO  - Test description: Verify display text and ui controls and Logo with Appropirate heading
+2016-11-09 16:22:18 INFO  - Check SmartShow Logo - Pass 
+2016-11-09 16:22:18 INFO  - Verified text expected "Showing" actual "Showings" 
+2016-11-09 16:22:18 INFO  - Check Heading of Showing page - Fail 
+2016-11-09 16:22:19 INFO  - ****************Waiting for 5 Secs before retrying.***********
+2016-11-09 16:22:22 INFO  - Check SmartShow Logo - Pass 
+2016-11-09 16:22:22 INFO  - Verified text expected "Showings" actual "Showings" 
+2016-11-09 16:22:22 INFO  - Check Heading of Showing page - Pass 
+2016-11-09 16:22:22 INFO  - Check Mine UI control - Pass 
+2016-11-09 16:22:22 INFO  - Check Deleted UI control - Pass 
+2016-11-09 16:22:22 INFO  - Check Schedule a new showing + button - Pass 
+2016-11-09 16:22:22 INFO  - Checking Edit this showing for scheduled
+2016-11-09 16:22:22 INFO  - Check Edit this Showing UI control - Pass 
+2016-11-09 16:22:23 INFO  - Checking Scheduled Delete this Showing UI
+2016-11-09 16:22:23 INFO  - Check Delete this showing UI control - Pass 
+2016-11-09 16:22:23 INFO  - Total Time taken in(seconds):10
+2016-11-09 16:22:26 INFO  - Showing suite finished at Wed Nov 09 16:22:26 IST 2016
+2016-11-09 18:13:30 INFO  - Showing suite started at Wed Nov 09 18:13:30 IST 2016
+2016-11-09 18:13:47 INFO  - Test Started: TC_SS001
+2016-11-09 18:13:47 INFO  - Test description: Verify display text and ui controls and Logo with Appropirate heading
+2016-11-09 18:14:53 INFO  - ****************Waiting for 5 Secs before retrying.***********
+2016-11-09 18:15:54 INFO  - null-FAIL 
+2016-11-09 18:15:55 INFO  - Total Time taken in(seconds):128
+2016-11-09 18:15:55 INFO  - Showing suite finished at Wed Nov 09 18:15:55 IST 2016
+2016-11-09 18:20:38 INFO  - Showing suite started at Wed Nov 09 18:20:38 IST 2016
+2016-11-09 18:20:53 INFO  - Test Started: TC_SS001
+2016-11-09 18:20:53 INFO  - Test description: Verify display text and ui controls and Logo with Appropirate heading
+2016-11-09 18:21:00 INFO  - Check SmartShow Logo - Pass 
+2016-11-09 18:21:00 INFO  - Verified text expected "Showing" actual "Showings" 
+2016-11-09 18:21:00 INFO  - Check Heading of Showing page - Fail 
+2016-11-09 18:21:02 INFO  - ****************Waiting for 5 Secs before retrying.***********
+2016-11-09 18:21:05 INFO  - Check SmartShow Logo - Pass 
+2016-11-09 18:21:05 INFO  - Verified text expected "Showings" actual "Showings" 
+2016-11-09 18:21:05 INFO  - Check Heading of Showing page - Pass 
+2016-11-09 18:21:05 INFO  - Check Mine UI control - Pass 
+2016-11-09 18:21:05 INFO  - Check Deleted UI control - Pass 
+2016-11-09 18:21:05 INFO  - Check Schedule a new showing + button - Pass 
+2016-11-09 18:21:05 INFO  - Checking Edit this showing for scheduled
+2016-11-09 18:21:05 INFO  - Check Edit this Showing UI control - Pass 
+2016-11-09 18:21:06 INFO  - Checking Scheduled Delete this Showing UI
+2016-11-09 18:21:06 INFO  - Check Delete this showing UI control - Pass 
+2016-11-09 18:21:06 INFO  - Total Time taken in(seconds):13
+2016-11-09 18:21:07 INFO  - Showing suite finished at Wed Nov 09 18:21:07 IST 2016

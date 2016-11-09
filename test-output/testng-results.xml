@@ -2,21 +2,21 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Showing" duration-ms="12053" started-at="2016-11-08T12:21:41Z" finished-at="2016-11-08T12:21:53Z">
+  <suite name="Showing" duration-ms="14195" started-at="2016-11-09T12:50:53Z" finished-at="2016-11-09T12:51:07Z">
     <groups>
       <group name="All">
-        <method signature="TC_SS001.TC_SS001_Test()[pri:0, instance:TestingXperts.smartshow.tests.TC_SS001@4550bb58]" name="TC_SS001_Test" class="TestingXperts.smartshow.tests.TC_SS001"/>
+        <method signature="TC_SS001.TC_SS001_Test()[pri:0, instance:TestingXperts.smartshow.tests.TC_SS001@c8c12ac]" name="TC_SS001_Test" class="TestingXperts.smartshow.tests.TC_SS001"/>
       </group> <!-- All -->
       <group name="Regression">
-        <method signature="TC_SS001.TC_SS001_Test()[pri:0, instance:TestingXperts.smartshow.tests.TC_SS001@4550bb58]" name="TC_SS001_Test" class="TestingXperts.smartshow.tests.TC_SS001"/>
+        <method signature="TC_SS001.TC_SS001_Test()[pri:0, instance:TestingXperts.smartshow.tests.TC_SS001@c8c12ac]" name="TC_SS001_Test" class="TestingXperts.smartshow.tests.TC_SS001"/>
       </group> <!-- Regression -->
       <group name="Login">
-        <method signature="TC_SS001.TC_SS001_Test()[pri:0, instance:TestingXperts.smartshow.tests.TC_SS001@4550bb58]" name="TC_SS001_Test" class="TestingXperts.smartshow.tests.TC_SS001"/>
+        <method signature="TC_SS001.TC_SS001_Test()[pri:0, instance:TestingXperts.smartshow.tests.TC_SS001@c8c12ac]" name="TC_SS001_Test" class="TestingXperts.smartshow.tests.TC_SS001"/>
       </group> <!-- Login -->
     </groups>
-    <test name="Showing-Tests" duration-ms="12053" started-at="2016-11-08T12:21:41Z" finished-at="2016-11-08T12:21:53Z">
+    <test name="Showing-Tests" duration-ms="14195" started-at="2016-11-09T12:50:53Z" finished-at="2016-11-09T12:51:07Z">
       <class name="TestingXperts.smartshow.tests.TC_SS001">
-        <test-method status="PASS" signature="TC_SS001_Test()[pri:0, instance:TestingXperts.smartshow.tests.TC_SS001@4550bb58]" name="TC_SS001_Test" duration-ms="11515" started-at="2016-11-08T17:51:41Z" description="Verify display text and ui controls and Logo with Appropirate heading" finished-at="2016-11-08T17:51:53Z">
+        <test-method status="PASS" signature="TC_SS001_Test()[pri:0, instance:TestingXperts.smartshow.tests.TC_SS001@c8c12ac]" name="TC_SS001_Test" duration-ms="13721" started-at="2016-11-09T18:20:53Z" description="Verify display text and ui controls and Logo with Appropirate heading" finished-at="2016-11-09T18:21:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_SS001_Test -->
