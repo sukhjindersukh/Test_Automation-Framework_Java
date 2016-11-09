@@ -12,3 +12,4 @@
 * Basic setup and teardown is written in listner
 * Just start writing tests 
 * Common functions are already backed in
+* Maven and Jenkins integrated

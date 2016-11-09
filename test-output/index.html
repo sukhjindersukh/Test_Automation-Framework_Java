@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Showing">
-              <span class="suite-name border-passed">Showing</span>
+              <span class="suite-name border-failed">Showing</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,21 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">1 method, 1 failed,   </span>
                   </li>
                   <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Showing" class="hide-methods passed suite-Showing"> (hide)</a> <!-- hide-methods passed suite-Showing -->
-                      <a href="#" panel-name="suite-Showing" class="show-methods passed suite-Showing"> (show)</a> <!-- show-methods passed suite-Showing -->
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Showing" class="hide-methods failed suite-Showing"> (hide)</a> <!-- hide-methods failed suite-Showing -->
+                      <a href="#" panel-name="suite-Showing" class="show-methods failed suite-Showing"> (show)</a> <!-- show-methods failed suite-Showing -->
                     </span>
-                    <div class="method-list-content passed suite-Showing">
+                    <div class="method-list-content failed suite-Showing">
                       <span>
-                        <img width="3%" src="passed.png"/>
+                        <img width="3%" src="failed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Showing" title="TestingXperts.smartshow.tests.TC_SS001" hash-for-method="TC_SS001_Test">TC_SS001_Test</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-Showing -->
+                    </div> <!-- method-list-content failed suite-Showing -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -117,9 +117,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Showing" class="panel Showing">
-          <div class="suite-Showing-class-passed">
+          <div class="suite-Showing-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">TestingXperts.smartshow.tests.TC_SS001</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -128,12 +128,22 @@
                   <a name="TC_SS001_Test">
                   </a> <!-- TC_SS001_Test -->
                   <span class="method-name">TC_SS001_Test</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at ru.yandex.qatools.ashot.screentaker.ViewportPastingStrategy.getFullHeight(ViewportPastingStrategy.java:23)
+	at ru.yandex.qatools.ashot.screentaker.VerticalPastingShootingStrategy.getScreenshot(VerticalPastingShootingStrategy.java:33)
+	at ru.yandex.qatools.ashot.screentaker.ScreenTaker.take(ScreenTaker.java:22)
+	at ru.yandex.qatools.ashot.AShot.takeScreenshot(AShot.java:141)
+	at Utilities.Utility.takeScreenshot(Utility.java:214)
+	at TestingXperts.smartshow.tests.TC_SS001.TC_SS001_Test(TC_SS001.java:64)
+	at suite.runner.CustomSuiteRunner.suiteRunner(CustomSuiteRunner.java:159)
+... Removed 50 stack frames
+</div> <!-- stack-trace -->
                   <em>
 (Verify display text and ui controls and Logo with Appropirate heading)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Showing-class-passed -->
+          </div> <!-- suite-Showing-class-failed -->
         </div> <!-- panel Showing -->
         <div panel-name="test-xml-Showing" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -214,12 +224,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'TC_SS001_Test')
 data.setCell(0, 2, 'TestingXperts.smartshow.tests.TC_SS001')
-data.setCell(0, 3, 11515);
+data.setCell(0, 3, 2316);
 window.suiteTableData['Showing']= { tableData: data, tableDiv: 'times-div-Showing'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 11 seconds</span>
+              <span class="suite-total-time">Total running time: 2 seconds</span>
               <div id="times-div-Showing">
               </div> <!-- times-div-Showing -->
             </div> <!-- times-div -->
@@ -247,6 +257,8 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">TestingXperts.smartshow.tests.TC_SS001</div> <!-- chronological-class-name -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">TC_SS001_Test</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->

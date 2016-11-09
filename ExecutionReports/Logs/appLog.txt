@@ -10962,3 +10962,8 @@
 2016-11-08 17:51:53 INFO  - Check Delete this showing UI control - Pass 
 2016-11-08 17:51:53 INFO  - Total Time taken in(seconds):11
 2016-11-08 17:51:54 INFO  - Showing suite finished at Tue Nov 08 17:51:54 IST 2016
+2016-11-09 15:49:15 INFO  - Showing suite started at Wed Nov 09 15:49:15 IST 2016
+2016-11-09 15:49:26 INFO  - Test Started: TC_SS001
+2016-11-09 15:49:26 INFO  - Test description: Verify display text and ui controls and Logo with Appropirate heading
+2016-11-09 15:49:28 INFO  - Total Time taken in(seconds):2
+2016-11-09 15:49:29 INFO  - Showing suite finished at Wed Nov 09 15:49:29 IST 2016
