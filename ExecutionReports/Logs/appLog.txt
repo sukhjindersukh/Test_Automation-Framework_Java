@@ -10986,3 +10986,29 @@
 2016-11-10 17:19:58 INFO  - Test description: Verify display text and ui controls and Logo with Appropirate heading
 2016-11-10 17:20:08 INFO  - Total Time taken in(seconds):9
 2016-11-10 17:20:09 INFO  - Showing suite finished at Thu Nov 10 17:20:09 IST 2016
+2016-11-10 17:30:24 INFO  - Showing suite started at Thu Nov 10 17:30:24 IST 2016
+2016-11-10 17:30:45 INFO  - Test Started: TC_SS001
+2016-11-10 17:30:45 INFO  - Test description: Verify display text and ui controls and Logo with Appropirate heading
+2016-11-10 17:30:52 INFO  - Check SmartShow Logo - Pass 
+2016-11-10 17:30:52 INFO  - Verified text expected "Showing" actual "Showings" 
+2016-11-10 17:30:52 INFO  - Check Heading of Showing page - Fail 
+2016-11-10 17:30:54 INFO  - ****************Waiting for 5 Secs before retrying.***********
+2016-11-10 17:30:58 INFO  - Check SmartShow Logo - Pass 
+2016-11-10 17:30:59 INFO  - Verified text expected "Showings" actual "Showings" 
+2016-11-10 17:30:59 INFO  - Check Heading of Showing page - Pass 
+2016-11-10 17:30:59 INFO  - Check Mine UI control - Pass 
+2016-11-10 17:30:59 INFO  - Check Deleted UI control - Pass 
+2016-11-10 17:30:59 INFO  - Check Schedule a new showing + button - Pass 
+2016-11-10 17:30:59 INFO  - Checking Edit this showing for scheduled
+2016-11-10 17:31:00 INFO  - Check Edit this Showing UI control - Pass 
+2016-11-10 17:31:01 INFO  - Checking Scheduled Delete this Showing UI
+2016-11-10 17:31:01 INFO  - Check Delete this showing UI control - Pass 
+2016-11-10 17:31:01 INFO  - Total Time taken in(seconds):15
+2016-11-10 17:31:03 INFO  - Showing suite finished at Thu Nov 10 17:31:03 IST 2016
+2016-11-10 18:03:51 INFO  - Showing suite started at Thu Nov 10 18:03:51 IST 2016
+2016-11-10 18:04:22 INFO  - Test Started: TC_SS001
+2016-11-10 18:04:22 INFO  - Test description: Verify display text and ui controls and Logo with Appropirate heading
+2016-11-10 18:05:32 INFO  - ****************Waiting for 5 Secs before retrying.***********
+2016-11-10 18:06:36 INFO  - null-FAIL 
+2016-11-10 18:06:37 INFO  - Total Time taken in(seconds):134
+2016-11-10 18:06:38 INFO  - Showing suite finished at Thu Nov 10 18:06:38 IST 2016

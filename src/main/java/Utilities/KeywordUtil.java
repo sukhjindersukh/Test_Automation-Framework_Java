@@ -15,6 +15,7 @@ import java.util.TimeZone;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.ElementNotVisibleException;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
@@ -23,8 +24,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import com.google.common.base.Function;
 import com.itextpdf.text.pdf.PdfReader;
 import com.itextpdf.text.pdf.parser.PdfTextExtractor;
 
@@ -58,32 +61,63 @@ public class KeywordUtil extends Utility {
 		return wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
 	}
 
-	public static WebElement findWithWait(By locator, int seconds) throws Exception {
-		WebElement element = null;
+	public static WebElement findWithFluintWait(By locator, int seconds, int poolingMil) throws Exception {
+		// Because if implict wait is set then fluint wait will not work
 		driver.manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS);
+		WebElement element = null;
+		
 		try {
-			FluentWait<WebDriver> fluentWait = new FluentWait<WebDriver>(driver).withTimeout(seconds, TimeUnit.SECONDS)
-					.pollingEvery(200, TimeUnit.MILLISECONDS).ignoring(NoSuchElementException.class)
-					.ignoring(StaleElementReferenceException.class).ignoring(WebDriverException.class);
+			Wait<WebDriver> wait = new FluentWait<WebDriver>(driver).withTimeout(seconds, TimeUnit.SECONDS)
+					.pollingEvery(poolingMil, TimeUnit.MILLISECONDS)
+					.ignoring(NoSuchElementException.class)
+					.ignoring(StaleElementReferenceException.class)
+					.ignoring(ElementNotVisibleException.class);
 
-			element = fluentWait.until(
+			element = wait.until(new Function<WebDriver, WebElement>() {
+				public WebElement apply(WebDriver driver) {
+					return driver.findElement(locator);
+				}
+			});
 
-					ExpectedConditions.visibilityOfElementLocated(locator)
-
-			);
-			return element;
-
-		} catch (Exception e) {
-
+		} catch (Throwable t) {
 			throw new Exception("Timeout reached when searching for element! Time: " + seconds + " seconds " + "\n"
-					+ e.getMessage());
-
+					+ t.getMessage());
 		} finally {
-			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+			driver.manage().timeouts().implicitlyWait(Utility.getIntValue("implicitlyWait"), TimeUnit.SECONDS);
 		}
+		
+		return element;
+	}//End FindWithWait()
 
-	}
+	public static WebElement findWithFluintWait(By locator) throws Exception {
+		// Because if implict wait is set then fluint wait will not work
+		driver.manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS);
+		WebElement element = null;
+		
+		try {
+			Wait<WebDriver> wait = new FluentWait<WebDriver>(driver).withTimeout(DEFAULT_WAIT_SECONDS, TimeUnit.SECONDS)
+					.pollingEvery(200, TimeUnit.MILLISECONDS)
+					.ignoring(NoSuchElementException.class)
+					.ignoring(StaleElementReferenceException.class)
+					.ignoring(ElementNotVisibleException.class);
 
+			element = wait.until(new Function<WebDriver, WebElement>() {
+				public WebElement apply(WebDriver driver) {
+					return driver.findElement(locator);
+				}
+			});
+
+		} catch (Throwable t) {
+			throw new Exception("Timeout reached when searching for element! Time: " + DEFAULT_WAIT_SECONDS + " seconds " + "\n"
+					+ t.getMessage());
+		} finally {
+			driver.manage().timeouts().implicitlyWait(Utility.getIntValue("implicitlyWait"), TimeUnit.SECONDS);
+		}
+		
+		return element;
+	}//End FindWithWait()
+
+	
 	// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 	/*
@@ -291,7 +325,7 @@ public class KeywordUtil extends Utility {
 	}
 	public boolean verifyAllValuesOfDropDown(By locator, String data) throws Throwable {
 		boolean flag = false;
-		WebElement element = findWithWait(locator, DEFAULT_WAIT_SECONDS);
+		WebElement element = findWithFluintWait(locator);
 		List<WebElement> options = element.findElements(By.tagName("option"));
 		String[] allElements = data.split(",");
 		String actual;
