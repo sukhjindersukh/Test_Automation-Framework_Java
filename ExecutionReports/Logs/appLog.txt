@@ -10962,3 +10962,27 @@
 2016-11-08 17:51:53 INFO  - Check Delete this showing UI control - Pass 
 2016-11-08 17:51:53 INFO  - Total Time taken in(seconds):11
 2016-11-08 17:51:54 INFO  - Showing suite finished at Tue Nov 08 17:51:54 IST 2016
+2016-11-10 17:10:08 INFO  - Default suite suite started at Thu Nov 10 17:10:08 IST 2016
+2016-11-10 17:11:37 INFO  - Showing suite started at Thu Nov 10 17:11:37 IST 2016
+2016-11-10 17:12:07 INFO  - Test Started: TC_SS001
+2016-11-10 17:12:07 INFO  - Test description: Verify display text and ui controls and Logo with Appropirate heading
+2016-11-10 17:13:12 INFO  - ****************Waiting for 5 Secs before retrying.***********
+2016-11-10 17:13:43 INFO  - null-FAIL 
+2016-11-10 17:13:47 INFO  - Total Time taken in(seconds):100
+2016-11-10 17:13:48 INFO  - Showing suite finished at Thu Nov 10 17:13:48 IST 2016
+2016-11-10 17:15:06 INFO  - Showing suite started at Thu Nov 10 17:15:06 IST 2016
+2016-11-10 17:16:02 INFO  - Showing suite started at Thu Nov 10 17:16:02 IST 2016
+2016-11-10 17:16:13 INFO  - Test Started: TC_SS001
+2016-11-10 17:16:13 INFO  - Test description: Verify display text and ui controls and Logo with Appropirate heading
+2016-11-10 17:16:15 INFO  - Total Time taken in(seconds):2
+2016-11-10 17:16:17 INFO  - Showing suite finished at Thu Nov 10 17:16:17 IST 2016
+2016-11-10 17:16:46 INFO  - Showing suite started at Thu Nov 10 17:16:46 IST 2016
+2016-11-10 17:16:52 INFO  - Test Started: TC_SS001
+2016-11-10 17:16:52 INFO  - Test description: Verify display text and ui controls and Logo with Appropirate heading
+2016-11-10 17:16:54 INFO  - Total Time taken in(seconds):2
+2016-11-10 17:16:56 INFO  - Showing suite finished at Thu Nov 10 17:16:56 IST 2016
+2016-11-10 17:19:25 INFO  - Showing suite started at Thu Nov 10 17:19:25 IST 2016
+2016-11-10 17:19:58 INFO  - Test Started: TC_SS001
+2016-11-10 17:19:58 INFO  - Test description: Verify display text and ui controls and Logo with Appropirate heading
+2016-11-10 17:20:08 INFO  - Total Time taken in(seconds):9
+2016-11-10 17:20:09 INFO  - Showing suite finished at Thu Nov 10 17:20:09 IST 2016
