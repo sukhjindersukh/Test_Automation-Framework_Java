@@ -24,18 +24,13 @@
 			<version>3.3.9</version>
 		</dependency>
 
-		<dependency>
-			<groupId>junit</groupId>
-			<artifactId>junit</artifactId>
-			<version>4.12</version>
-			<scope>test</scope>
-		</dependency>
+		
 
 		<dependency>
 			<groupId>org.testng</groupId>
 			<artifactId>testng</artifactId>
 			<version>6.9.13.6</version>
-			<scope>test</scope>
+			
 		</dependency>
 
 		<dependency>
