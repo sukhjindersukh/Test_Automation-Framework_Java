@@ -53,6 +53,8 @@ public class TC_SS001 extends KeywordUtil{
 			
 			stepInfo = "Check Delete this showing UI control";
 			checkStep(ShowingPage.checkScheduled_DeleteThisShowingUI(driver), getClass(), stepInfo);
+			
+			stepInfo = "This is check for git update.";
 
 		}catch(SkipException skip){
 			GlobalUtil.testException=skip;
