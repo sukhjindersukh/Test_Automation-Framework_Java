@@ -1,10 +1,13 @@
 package Utilities;
 
+import java.io.IOException;
+
 import org.apache.log4j.ConsoleAppender;
 import org.apache.log4j.FileAppender;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PatternLayout;
+import org.apache.log4j.RollingFileAppender;
 
 public class LogUtil {
 	 static Logger errorLogger;
@@ -12,6 +15,7 @@ public class LogUtil {
 	 static FileAppender normalFileApp;
 	 static FileAppender errorFileApp;
 	 static ConsoleAppender conApp;
+	 static RollingFileAppender normalRap,errorRap;
 	 public static boolean isInit=false;
 	
 	//If log4j.property file is not in the root dir of project
@@ -23,7 +27,7 @@ public class LogUtil {
 	static PatternLayout consolePatternLayout = new PatternLayout("\tLOG-: [%m -  %d{yyyy-MM-dd HH:mm:ss a}] %n");
 	
 	
-	 public static void init(Class clazz){
+	 public static void init(Class clazz) {
 		 if(!isInit){
 		 
 		 normalLogger = Logger.getLogger(clazz+",NormalLogger");
@@ -37,6 +41,17 @@ public class LogUtil {
 		 normalLogger.addAppender(normalFileApp);
 		 normalFileApp.activateOptions();
 		 
+		 //Rolling File Appender for maximum 5 mb log file size 
+		 try {
+			 normalRap = new RollingFileAppender(patternLayout, normalFileApp.getFile());
+			 normalRap.setMaxBackupIndex(5);
+			 normalRap.setMaximumFileSize(5);
+			 normalRap.activateOptions();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		 
 		 errorLogger = Logger.getLogger(clazz+",ErrorLogger");
 		 errorLogger.setLevel(Level.ERROR);
 		 errorFileApp= new FileAppender();
@@ -47,6 +62,15 @@ public class LogUtil {
 		 errorLogger.addAppender(errorFileApp);
 		 errorFileApp.activateOptions();
 		 
+		 try {
+			 errorRap = new RollingFileAppender(patternLayout, errorFileApp.getFile());
+			 normalRap.setMaxBackupIndex(5);
+			 normalRap.setMaximumFileSize(5);
+			 normalRap.activateOptions();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		 
 		 conApp = new ConsoleAppender();
 		 conApp.setLayout(consolePatternLayout);
@@ -98,7 +122,7 @@ public class LogUtil {
 	 }
 	
 	 
-	 public static void infoLog(Class clazz,String message){
+	 public static void infoLog(Class clazz,String message) {
 		 init(clazz); 
 		 normalLogger.info(message);
 		 
@@ -113,7 +137,7 @@ public class LogUtil {
 		 	 
 	 }
 	 
-	 public static void errorLog(Class clazz,String message, Throwable t){
+	 public static void errorLog(Class clazz,String message, Throwable t) {
 		 init(clazz);	
 	 
 		 errorLogger.error(message,t);
@@ -121,7 +145,7 @@ public class LogUtil {
 				 	 
 	 }
 	 
-	 public static void errorLog(Class clazz,String message){
+	 public static void errorLog(Class clazz,String message) {
 		 init(clazz);	
 		errorLogger.error(message);
 		errorLogger.error("-----------------------------------------------------------------------");

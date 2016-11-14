@@ -56,6 +56,7 @@ public class CustomListeners  extends Utility implements ISuiteListener, IInvoke
 			
 			//Current suite name extracted from the xml file. 
 			GlobalUtil.currentSuiteName = suite.getName();
+			LogUtil.infoLog(getClass(), "\n\n+============================================================================================================================+" );
 			LogUtil.infoLog(getClass(), GlobalUtil.currentSuiteName +" suite started" + " at " +new Date());
 			//This driver coming from XML File from the defined parameter name Browser.
 			
@@ -180,7 +181,9 @@ public class CustomListeners  extends Utility implements ISuiteListener, IInvoke
 		GlobalUtil.testData.setProjectID(GlobalUtil.commonSettings.getProjectName());
 		GlobalUtil.testResult.setRunDateTime(new Date());
 		
+		LogUtil.infoLog(getClass(), "\n+----------------------------------------------------------------------------------------------------------------------------+" );
 		LogUtil.infoLog(getClass(), "Test Started: "+ testCaseID );
+		
 		LogUtil.infoLog(getClass(), "Test description: "+GlobalUtil.testData.getTestDesc() );
 	}
 
