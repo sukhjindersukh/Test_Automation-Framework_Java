@@ -11174,3 +11174,7 @@
 +----------------------------------------------------------------------------------------------------------------------------+
 2016-11-16 15:17:50 INFO  - Test Started: TC_SS001
 2016-11-16 15:17:50 INFO  - Test description: Verify display text and ui controls and Logo with Appropirate heading
+2016-11-16 15:18:58 INFO  - ****************Waiting for 5 Secs before retrying.***********
+2016-11-16 15:20:01 INFO  - null-FAIL 
+2016-11-16 15:20:02 INFO  - Total Time taken in(seconds):132
+2016-11-16 15:20:03 INFO  - Showing suite finished at Wed Nov 16 15:20:03 IST 2016

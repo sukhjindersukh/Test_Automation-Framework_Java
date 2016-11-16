@@ -2039,3 +2039,10 @@ Driver info: driver.version: RemoteWebDriver
 Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
 Session ID: 3aec2473-8e75-4c98-a7f4-b1c053e19efa
 2016-11-14 15:43:25 ERROR - -----------------------------------------------------------------------
+2016-11-16 15:20:02 ERROR - Timed out after 30 seconds waiting for element to be clickable: By.linkText: Showings
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'DSCHD-015', ip: '192.168.6.49', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_71'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 85235639-dc04-46ae-8a1f-6f2f46659ce0
+2016-11-16 15:20:02 ERROR - -----------------------------------------------------------------------
