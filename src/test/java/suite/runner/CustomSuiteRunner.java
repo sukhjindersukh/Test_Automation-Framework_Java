@@ -24,7 +24,7 @@ import Utilities.TestConfig;
 public class CustomSuiteRunner {
 	
 	@Test
-	public static void suiteRunner() {
+	public static void suiteRunner_Sukhjinder() {
 		
 		/* This is Test runner Utility that run all the tests based on enabled suites and their enabled tests 
 		 * ===========================================================
