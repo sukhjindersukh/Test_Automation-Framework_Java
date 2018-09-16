@@ -32,7 +32,7 @@ public class CustomSuiteRunner {
 		 *		PROCESS - 1 Get information from excel file
 		 *	-----------------------------------------------
 		 *	
-		 *  1.  Read Common settings from excel file
+		 *  1.  Read Common settings from excel file This is new changes
 		 *  	1. Application Type
 		 *  	2. Environment(UAT,STAGING etc.)
 		 *  	3. Browser
